@@ -1,0 +1,55 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    font-family: $font-family--primary;
+    background-color: $color-primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family--primary;
+    color: $color-secondary;
+}
+
+p {
+    font-family: $font-family--secondary;
+    color: $color-secondary;
+}
+
+body > .container-fluid {
+    padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+    margin: 20px 0;
+}
+
+//Get rid of bootstrap link/button outline after click
+.btn:focus, a:focus {
+    outline: none !important
+}
+
+
+

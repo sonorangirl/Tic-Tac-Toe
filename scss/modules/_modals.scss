@@ -1,0 +1,53 @@
+// ==========================================================================
+// Modals and Alerts Styles
+// ==========================================================================
+
+.alert {
+
+	&.alert-info {
+		background-color: $color-X;
+	}
+}
+
+.modal-content { 
+	text-align: center;
+
+	.modal-header {
+		background-color: $color-X;
+
+		h4 {
+			color: $color-light;
+		}
+	}
+
+	.modal-body{
+		background-color: $color-light;
+
+		p {
+			color: $color-secondary;
+
+			a {
+				color: $color-O;
+
+				&:hover {
+					color: $color-X;
+				}
+			}
+		}
+	}
+
+	.modal-footer {
+		background-color: $color-light;
+
+		button {
+			border: solid 2px $color-O;
+			background-color: $color-O;
+			color: $color-light;
+
+			&:hover {
+				background-color: $color-light;
+				color: $color-O;
+			}
+		}
+	}
+}

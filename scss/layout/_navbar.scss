@@ -1,0 +1,31 @@
+// ==========================================================================
+// Navbar Styles
+// ==========================================================================
+
+.nav {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    & > li {
+
+        flex-grow: 1;
+        
+        & > a {
+            color: $color-secondary;
+
+            &:hover {
+	        	background-color: $color-O;
+	        	color: $color-light;
+	        }
+
+	        &:focus {
+	        	background-color: $color-primary;
+	        	color: $color-secondary;
+	        }
+
+        }
+    }
+}
+    
+

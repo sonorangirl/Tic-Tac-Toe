@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+        <title>Tic Tac Toe</title>
+
+        <!-- Sweet Alert to style the alerts-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div id="aboutModal" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="about">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">About</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This game is a project made for <a href="freecodecamp.com">FreeCodeCamp</a></p>
+                        <p>View this project on <a href="#">Github</a></p>
+                        <p>View this project on <a href="http://codepen.io/sonorangirl/pen/ZpEyjJ">CodePen</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="header clearfix">
+            
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li><a id="resetGame" href="#">Reset Game</a></li>
+                        <li><a id="difficultyLevel" href="#">Difficulty: Easy</a></li>
+                        <li><a href="#aboutModal" data-toggle="modal" data-target="#aboutModal">About</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+
+            <div id="alert_placeholder"></div>
+
+            <div class="jumbotron">
+                <div class="row board above">
+                    <div id="box-1" class="col-xs-4 square left top">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-2" class="col-xs-4 square center top">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-3" class="col-xs-4 square right top">
+                        <p class="playerCharacter"></p>
+                    </div>
+                </div>
+                <div class="row board">
+                    <div id="box-4" class="col-xs-4 square left middle">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-5" class="col-xs-4 square center middle">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-6" class="col-xs-4 square right middle">
+                        <p class="playerCharacter"></p>
+                    </div>
+                </div>
+                <div class="row board below">
+                    <div id="box-7" class="col-xs-4 square left bottom">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-8" class="col-xs-4 square center bottom">
+                        <p class="playerCharacter"></p>
+                    </div>
+                    <div id="box-9" class="col-xs-4 square right bottom">
+                        <p class="playerCharacter"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row marketing centered">
+                <h4>Scores</h4>
+                <div class="col-xs-6">
+                    <p class="score" id="aiScore">computer wins: 0</p>
+                </div>
+                <div class="col-xs-6">
+                    <p class="score" id="userScore">player wins: 0</p>
+                </div>
+
+            
+            </div>
+
+        </div> <!-- /container -->
+
+        <footer class="footer centered">
+            <p class="centered">Made by <a href="http://sonorangirl.github.io/">Erin Manahan</a> for <a href="freecodecamp.com">FreeCodeCamp</a>.</p>
+        </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="js/game.js"></script>
+
+    </body>
+</html>
+
+
+
